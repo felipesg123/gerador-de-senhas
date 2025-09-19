@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #383838;
+}
+
+.container {
+    background: rgb(46, 46, 46);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(204, 0, 255, 0.2);
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #5900ff;
+    color: rgb(3, 3, 3);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #a200ff;
+}
+
+.navbar {
+    background-color: #333333;
+    overflow: hidden;
+    text-align: right;
+    padding-right: 10px;
+}
+.navbar a {
+    display: inline-block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    background-color: #000000;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    position: relative;
+}
+.navbar a:after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #575757;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+}
+.navbar a.active:after {
+    background-color: #4CAF50;
+}
+.navbar a:hover {
+    background-color: #575757;
+}
